@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Servicios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body id="cuerpo">
+
+<header>
+
+    <h1>Cloud Solutions</h1>
+    <p>Catálogo de Servicios Cloud</p>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <section>
+
+        <h2>Nuestros Servicios Cloud</h2>
+
+        <button id="botonImagen" type="button">Ocultar imagen</button>
+
+        <div id="contenedorImagen">
+            <img id="imagenCloud" src="image/cloud.jpg" alt="Servicios Cloud" width="400">
+        </div>
+
+        <p id="parrafoIntro">
+            Conoce algunos de los principales servicios de computación en la nube
+            utilizados por empresas de todo el mundo.
+            <a href="#" id="linkLeerMas">Leer más...</a>
+        </p>
+
+        <p id="textoExtendido" class="oculto">
+            La computación en la nube permite a las empresas escalar su
+            infraestructura según la demanda, reducir costos de mantención
+            y acceder a servicios de última generación como inteligencia
+            artificial, análisis de datos y respaldo automatizado sin necesidad
+            de administrar hardware propio.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Catálogo de Servicios</h2>
+
+        <table id="tablaServicios">
+
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+
+            <tbody id="cuerpoTabla">
+
+                <tr>
+                    <td>Amazon EC2</td>
+                    <td>Servidores virtuales en la nube</td>
+                </tr>
+
+                <tr>
+                    <td>Amazon S3</td>
+                    <td>Almacenamiento escalable de archivos</td>
+                </tr>
+
+                <tr>
+                    <td>Amazon RDS</td>
+                    <td>Bases de datos administradas</td>
+                </tr>
+
+                <tr>
+                    <td>Amazon CloudFront</td>
+                    <td>Distribución global de contenido</td>
+                </tr>
+
+                <tr>
+                    <td>AWS Lambda</td>
+                    <td>Ejecución de código sin servidores</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <h3>Agregar un nuevo servicio</h3>
+
+        <form id="formServicio">
+
+            <label for="nombreServicio">Nombre del servicio:</label>
+            <br>
+            <input type="text" id="nombreServicio" name="nombreServicio">
+            <br><br>
+
+            <label for="descServicio">Descripción:</label>
+            <br>
+            <input type="text" id="descServicio" name="descServicio">
+            <br><br>
+
+            <button type="submit" id="botonAgregar">Agregar Servicio</button>
+
+        </form>
+
+        <p id="mensajeServicio"></p>
+
+    </section>
+
+</main>
+
+<footer>
+    <hr>
+    <p>Cloud Solutions © 2026</p>
+</footer>
+
+<script src="js/catalogo.js"></script>
+
+</body>
+
+</html>
